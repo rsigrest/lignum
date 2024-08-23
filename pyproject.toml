@@ -3,9 +3,14 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-dynamic = ["version"]
 name = "lignum"
-dependencies = [
-  "flake8",
-  "pytest"
+authors = [{name = "Rob Sigrest", email = "rob.sigrest@gmail.com"}]
+readme = "readme.md"
+dynamic = ["description"]
+version = "0.0.1"
+
+[project.optional-dependencies]
+test = [
+  "flake8==7.1.1",
+  "pytest==8.3.2",
 ]
