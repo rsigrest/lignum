@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "lignum"
-version = "0.0.2"
+version = "0.0.3"
 authors = [{name = "Rob Sigrest", email = "rob.sigrest@gmail.com"}]
 readme = "readme.md"
 description = "A teensy structured JSON logger for python."
