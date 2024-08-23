@@ -9,7 +9,7 @@ pip install lignum
 Import and log to default stream (`sys.stderr`):
 ```python
 import lignum as log
-log.info('test') # {"timestamp": 1724129120, "message": "test", "level": "info"}
+log.info('test') # {"timestamp":1724129120,"message":"test","level":"info"}
 ```
 Change streams to log to `sys.stdout`:
 ```python
@@ -22,4 +22,9 @@ Change streams to log to a file:
 import lignum as log
 with open('log.log','w',encoding='utf-8') as f:
   log.info('test',stream=f) 
+```
+Log some extra key-value pairs:
+```python
+import lignum as log
+log.info('test',{'foo':'bar'}) # {"timestamp":1724129120,"message":"test","level":"info","foo":"bar"}
 ```
