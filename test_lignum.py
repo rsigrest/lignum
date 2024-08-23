@@ -1,4 +1,4 @@
-import ezlog as log
+import lignum as log
 import json
 import pytest
 
@@ -16,3 +16,8 @@ def test_levels(capsys):
             capture = capsys.readouterr()
             log = json.loads(capture.out)
             assert log['level'] == level
+
+def test_bulk(capsys):
+    with pytest.raises(Exception):
+        for i in range(10000):
+            log.info('test')
