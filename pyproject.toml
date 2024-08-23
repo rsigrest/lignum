@@ -4,10 +4,14 @@ build-backend = "hatchling.build"
 
 [project]
 name = "lignum"
+version = "0.0.1"
 authors = [{name = "Rob Sigrest", email = "rob.sigrest@gmail.com"}]
 readme = "readme.md"
-dynamic = ["description"]
-version = "0.0.1"
+description = "A teensy structured JSON logger for python."
+
+[project.urls]
+Homepage = "https://github.com/rsigrest/lignum"
+Repository = "https://github.com/rsigrest/lignum.git"
 
 [project.optional-dependencies]
 test = [

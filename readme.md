@@ -2,7 +2,7 @@
 A teensy structured JSON logger for python.
 
 ## Getting Started
-Install lignum (Note: this is not yet uploaded to PyPi so you'll have to install it from source):
+Install lignum:
 ```bash
 pip install lignum
 ```
